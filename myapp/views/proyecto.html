@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ARDUM - INGENIERÍA">
+    <meta name="author" content="NVM">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="ARDUM - INGENIERÍA" /> <!-- website name -->
+	<meta property="og:site" content="www.ardum.cl" /> <!-- website link -->
+	<meta property="og:title" content="ARDUM - INGENIERÍA"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Somos líderes en soluciones de ingeniería" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>ARDUM - Ingeniería </title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/fontawesome-all.css" rel="stylesheet">
+    <link href="../stylesheets/swiper.css" rel="stylesheet">
+	<link href="../stylesheets/magnific-popup.css" rel="stylesheet">
+	<link href="../stylesheets/styles.css" rel="stylesheet">
+
+  <!-- Favicon  -->
+  <link rel="icon" href="../../images/icon.png">
+</head>
+
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	  <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="../../"><img src="../../images/logo.png" alt="alternative"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../../#header">INICIO</a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="../../#intro" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">NOSOTROS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../../#"><span class="item-text">¿POR QUÉ ARDUM?</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="../../equipo"><span class="item-text">EQUIPO</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../../#services">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../../#projects">PROYECTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../../#contact">CONTÁCTANOS</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/ArdumIng">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://www.linkedin.com/company/ardum-ingenieria-spa/">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-linkedin fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+    <!-- Header -->
+    <header id="header" class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>${proyecto.nombre}</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="../../">INICIO</a><i class="fa fa-angle-double-right"></i><span>${proyecto.nombre}</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+    <!-- Terms Content -->
+    <div class="ex-basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                      <h3>${proyecto.nombre}</h3>
+
+                      <div class="row">
+                          <div class="col-md-6">
+                            <img src="../../images/${proyecto.foto}" alt="alternative">
+                          </div> <!-- end of col -->
+
+                          <div class="col-md-6">
+                              <ul class="list-unstyled li-space-lg indent">
+                                  <li class="media">
+                                      <i class="fas fa-square"></i>
+                                      <div class="media-body">Cliente: ${proyecto.cliente} </div>
+                                  </li>
+                                  <li class="media">
+                                      <i class="fas fa-square"></i>
+                                      <div class="media-body">HH: ${proyecto.HH} </div>
+                                  </li>
+                                  <li class="media">
+                                      <i class="fas fa-square"></i>
+                                      <div class="media-body">${proyecto.resena}</div>
+                                  </li>
+                              </ul>
+                          </div> <!-- end of col -->
+                      </div> <!-- end of row -->
+                  </div> <!-- end of text-container-->
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic -->
+    <!-- end of terms content -->
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="../../">INICIO</a><i class="fa fa-angle-double-right"></i><span>${proyecto.nombre}</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container about">
+                        <h4>ARDUM INGENIERÍA</h4>
+                        <p class="white">Deseamos desarrollar soluciones que agreguen valor, sean eficientes y sustentables, gracias a la agrupación de un equipo profesional, talentoso y en constante perfeccionamiento. Queremos construir con el cliente una relación de confianza en base a honestidad, responsabilidad y perseverancia.</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="text-container">
+                        <h4>MENÚ</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                               <a class="white page-scroll" href="../../#header">INICIO</a>
+                            </li>
+                            <li>
+                               <a class="white page-scroll" href="../../#intro">NOSOTROS</a>
+                            </li>
+                            <li class="media">
+                                <a class="white page-scroll" href="../../#services">SERVICIOS</a>
+                            </li>
+                            <li>
+                               <a class="white page-scroll" href="../../#projects">PROYECTOS</a>
+                            </li>
+                            <li>
+                               <a class="white page-scroll" href="../../#contact">CONTÁCTANOS</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-3">
+                    <div class="text-container">
+                      <img src="../../images/logo-bn.png" alt="alternative">
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="https://nicolasvegam.github.io">Dev by NVM</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="../javascripts/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../javascripts/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../javascripts/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../javascripts/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../javascripts/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../javascripts/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../javascripts/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="../javascripts/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="../javascripts/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../javascripts/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
